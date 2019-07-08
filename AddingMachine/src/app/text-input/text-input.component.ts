@@ -18,7 +18,13 @@ export class TextInputComponent implements OnInit {
     var logNode = document.createElement('p');
     var logNode2 = document.createElement('p');
     var textnode = document.createTextNode(value);
-    var answerNode = document.createTextNode('>>' + String(answer));
+    var answerNode: Text;
+      if (Number.isNaN(answer)){
+        answerNode= document.createTextNode('Invalid input, try again');
+      } else {
+        answerNode= document.createTextNode('>>' + String(answer)); 
+      }
+    
     logNode.appendChild(textnode);
     logNode2.appendChild(answerNode);
     document.getElementById('log').appendChild(logNode);
@@ -33,11 +39,6 @@ export class TextInputComponent implements OnInit {
       document.getElementById('log').scrollTop = document.getElementById('log').scrollHeight;
     } catch(err) { }                 
   }
-
-  reset(){
-    this.value = '>';
-  }
-
 
   constructor() { }
 

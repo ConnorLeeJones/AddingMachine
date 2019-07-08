@@ -1,8 +1,9 @@
 <!-- <pre>Output goes here. {{log}}</pre> -->
 <ul id='log'></ul>
 <hr />
-<p>Enter your equation: 
+<p id ='eg'>Enter your equation, surrounded with parenthesis and separated by spaces: 
 </p>
+<p id='eg'>eg. ( 2 * 2 )</p>
 <input #box
       (keyup.enter)="update(box.value); box.value = '>'"
       value = '>'

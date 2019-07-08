@@ -4,4 +4,10 @@
     overflow: scroll;
     border-style: ridge;
     align-self: auto;
+    background-color: ghostwhite;
+}
+
+#eg {
+    font-size: small
+
 }
