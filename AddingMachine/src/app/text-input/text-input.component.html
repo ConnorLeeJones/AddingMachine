@@ -1,3 +1,10 @@
-<pre>Output goes here. {{log}}</pre>
+<!-- <pre>Output goes here. {{log}}</pre> -->
+<ul id='log'></ul>
 <hr />
-<p>text-input goes here! You need to change this to a text input field.</p>
+<p>Enter your equation: 
+</p>
+<input #box
+      (keyup.enter)="update(box.value); box.value = '>'"
+      value = '>'
+      >
+

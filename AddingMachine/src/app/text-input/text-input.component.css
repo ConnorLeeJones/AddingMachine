@@ -1,0 +1,7 @@
+
+#log {
+    height: 55vh;
+    overflow: scroll;
+    border-style: ridge;
+    align-self: auto;
+}
